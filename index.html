@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5 javascript</title>
+  </head>
+  <body>
+    <form>
+           <label for="premier_nombre">Premier nombre : </label><input type="text" id="first-number" name="premier_nombre"/><br/>
+           <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="second-number" name="deuxieme_nombre"/><br/>
+           <!-- En cliquant sur validé (onclick + nom de la fonction) -->
+           <button  id="valider" name ="valider" onclick="donnee();">Valider</button>
+    </form>
+    <script>
+    // On apelle la fonction
+    function donnee(){
+      // getElementBy..ID.. correspond à l'Id de l'input
+      var firstNumber = document.getElementById('first-number').value;
+      var secondNumber = document.getElementById('second-number').value;
+      // parseInt ne prend que le nombre entier
+      var result = (parseInt(firstNumber) * secondNumber);
+      alert(result);
+    }
+    </script>
+  </body>
+</html>
