@@ -18,7 +18,7 @@
       var firstNumber = document.getElementById('first-number').value;
       var secondNumber = document.getElementById('second-number').value;
       // parseInt ne prend que le nombre entier
-      var result = (parseInt(firstNumber) * secondNumber);
+      var result = Math.trunc(firstNumber) * secondNumber;
       alert(result);
     }
     </script>
